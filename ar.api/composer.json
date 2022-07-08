@@ -1,0 +1,14 @@
+{
+	"autoload" :
+	{
+		"psr-4" :
+		{
+			"Autoload\\" : "Source/"
+		}
+	},
+	"require": {
+		"nowakowskir/php-jwt": "^2.0",
+		"mongodb/mongodb": "^1.12",
+		"doctrine/mongodb-odm": "^2.4"
+	}
+}

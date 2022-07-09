@@ -7,37 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInit54e31a477b2d7b7d5fe4bc81c4b61511
 {
     public static $files = array (
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
-        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
-        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
-        'c2aad8997a98dfc4771bdbffea3d62b7' => __DIR__ . '/..' . '/laminas/laminas-code/polyfill/ReflectionEnumPolyfill.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
-        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '3a37ebac017bc098e9a86b35401e7a68' => __DIR__ . '/..' . '/mongodb/mongodb/src/functions.php',
-        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
-            'Symfony\\Polyfill\\Mbstring\\' => 26,
-            'Symfony\\Polyfill\\Intl\\Normalizer\\' => 33,
-            'Symfony\\Polyfill\\Intl\\Grapheme\\' => 31,
-            'Symfony\\Polyfill\\Ctype\\' => 23,
-            'Symfony\\Contracts\\Service\\' => 26,
-            'Symfony\\Component\\VarDumper\\' => 28,
-            'Symfony\\Component\\String\\' => 25,
-            'Symfony\\Component\\Filesystem\\' => 29,
-            'Symfony\\Component\\Console\\' => 26,
-        ),
-        'P' => 
-        array (
-            'Psr\\Container\\' => 14,
-            'Psr\\Cache\\' => 10,
-            'ProxyManager\\' => 13,
         ),
         'N' => 
         array (
@@ -47,24 +24,9 @@ class ComposerStaticInit54e31a477b2d7b7d5fe4bc81c4b61511
         array (
             'MongoDB\\' => 8,
         ),
-        'L' => 
-        array (
-            'Laminas\\Code\\' => 13,
-        ),
         'J' => 
         array (
             'Jean85\\' => 7,
-        ),
-        'D' => 
-        array (
-            'Doctrine\\Persistence\\' => 21,
-            'Doctrine\\ODM\\MongoDB\\' => 21,
-            'Doctrine\\Instantiator\\' => 22,
-            'Doctrine\\Common\\Lexer\\' => 22,
-            'Doctrine\\Common\\Collections\\' => 28,
-            'Doctrine\\Common\\Cache\\' => 22,
-            'Doctrine\\Common\\Annotations\\' => 28,
-            'Doctrine\\Common\\' => 16,
         ),
         'A' => 
         array (
@@ -77,54 +39,6 @@ class ComposerStaticInit54e31a477b2d7b7d5fe4bc81c4b61511
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
         ),
-        'Symfony\\Polyfill\\Mbstring\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
-        ),
-        'Symfony\\Polyfill\\Intl\\Normalizer\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
-        ),
-        'Symfony\\Polyfill\\Intl\\Grapheme\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme',
-        ),
-        'Symfony\\Polyfill\\Ctype\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
-        ),
-        'Symfony\\Contracts\\Service\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/service-contracts',
-        ),
-        'Symfony\\Component\\VarDumper\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/var-dumper',
-        ),
-        'Symfony\\Component\\String\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/string',
-        ),
-        'Symfony\\Component\\Filesystem\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/filesystem',
-        ),
-        'Symfony\\Component\\Console\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/console',
-        ),
-        'Psr\\Container\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/container/src',
-        ),
-        'Psr\\Cache\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/cache/src',
-        ),
-        'ProxyManager\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/friendsofphp/proxy-manager-lts/src/ProxyManager',
-        ),
         'Nowakowskir\\JWT\\' => 
         array (
             0 => __DIR__ . '/..' . '/nowakowskir/php-jwt/src',
@@ -133,45 +47,9 @@ class ComposerStaticInit54e31a477b2d7b7d5fe4bc81c4b61511
         array (
             0 => __DIR__ . '/..' . '/mongodb/mongodb/src',
         ),
-        'Laminas\\Code\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/laminas/laminas-code/src',
-        ),
         'Jean85\\' => 
         array (
             0 => __DIR__ . '/..' . '/jean85/pretty-package-versions/src',
-        ),
-        'Doctrine\\Persistence\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/persistence/src/Persistence',
-        ),
-        'Doctrine\\ODM\\MongoDB\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/mongodb-odm/lib/Doctrine/ODM/MongoDB',
-        ),
-        'Doctrine\\Instantiator\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
-        ),
-        'Doctrine\\Common\\Lexer\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
-        ),
-        'Doctrine\\Common\\Collections\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/collections/lib/Doctrine/Common/Collections',
-        ),
-        'Doctrine\\Common\\Cache\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
-        ),
-        'Doctrine\\Common\\Annotations\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
-        ),
-        'Doctrine\\Common\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/event-manager/lib/Doctrine/Common',
         ),
         'Autoload\\' => 
         array (
@@ -182,7 +60,6 @@ class ComposerStaticInit54e31a477b2d7b7d5fe4bc81c4b61511
     public static $classMap = array (
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
         'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',

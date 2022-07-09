@@ -6,6 +6,8 @@
         'NAME'      => 'Angoretratos',
         'DETAIL'    => 'Site de Notícias',
         'AUTHOR'    => 'João Francisco',
+        'RIGHTS'    => 'Angoretratos',
+        'DOMAIN'    => 'http://angoretratos.com'
     ]);
 
 	define('BASE',        'http://localhost/Ar/ar.app/');

@@ -44,7 +44,7 @@
 						account_code,
 						account_name,
 						account_email,
-						account_passwd,
+						account_pass,
 						account_master,
 						account_access
 			)
@@ -52,7 +52,7 @@
 						:account_code,
 						:account_name,
 						:account_email,
-						:account_passwd,
+						:account_pass,
 						:account_master,
 						:account_access
 			)
@@ -81,18 +81,18 @@
 
 		}
 
-		public function updatePasswdAccount($data)
+		public function updatepassAccount($data)
 		{
 
-			$updatePasswdAccount = $this->database->mysqlNon("
+			$updatepassAccount = $this->database->mysqlNon("
 
 				update 	account
-				set 	account_passwd	= :account_passwd
+				set 	account_pass	= :account_pass
 				where 	account_id 		= :account_id;
 
 			", $data);
 
-			return $updatePasswdAccount;
+			return $updatepassAccount;
 
 		}
 
@@ -114,7 +114,7 @@
 
 				select *from 	account
 				where 			account_email = :account_email
-				and 			account_passwd = :account_passwd;
+				and 			account_pass = :account_pass;
 
 			", $data);
 

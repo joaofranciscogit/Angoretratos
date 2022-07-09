@@ -3,7 +3,7 @@ create table account(
 	account_code 	varchar(100) 						not null,
 	account_name	varchar(250) 						not null,
 	account_email	varchar(50) 						not null,
-	account_passwd	varchar(250) 						not null,
+	account_pass	varchar(250) 						not null,
 	account_master	boolean			default false,
 	account_access	boolean			default false,
 	account_date	timestamp

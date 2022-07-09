@@ -6,5 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Nowakowskir\\JWT\\' => array($vendorDir . '/nowakowskir/php-jwt/src'),
+    'Curl\\' => array($vendorDir . '/php-curl-class/php-curl-class/src/Curl'),
     'Autoload\\' => array($baseDir . '/Source'),
 );

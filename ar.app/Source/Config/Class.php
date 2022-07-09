@@ -2,8 +2,8 @@
 
     use Autoload\Class\Auth\Auth;
     use Autoload\Class\Csrf\Csrf;
-    use Autoload\Class\Api\Api;
+    use Curl\Curl;
 
     $useAuth 	= new Auth();
     $useCsrf    = new Csrf();
-    $useApi     = new Api(API);
+    $useCurl    = new Curl();

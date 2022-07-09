@@ -18,6 +18,8 @@
 
     $routeShow = $useRoute->routeShow(ROUTE_LIST, $routePath);
 
+    session_start();
+
     if ($routeShow != false)
     {
        require_once $routeShow;

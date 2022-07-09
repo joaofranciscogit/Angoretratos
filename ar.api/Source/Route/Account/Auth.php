@@ -21,18 +21,19 @@
 
 	$useValidate->dataValidate(DATA);
 
-	if($useValidate->requestValidate() == true)
+	if($useValidate->requestValidate())
 	{
-		$requestJson = DATA["REQUEST"]["JSON"];
+		$arr = json_decode(DATA["REQUEST"]["JSON"]);
 
-		if(!empty($requestJson))
+		if	(
+					!empty($arr->account_email)
+				&&	!empty($arr->account_pass)
+			)
 		{
-			$arr = json_decode($requestJson);
-
 			$data  = 
 			[
-				":account_email" => $arr->account_email,
-				":account_passwd" => sha1($arr->account_passwd)
+				":account_email" 	=> $arr->account_email,
+				":account_pass" 	=> $arr->account_pass
 			];
 
 			$authAccount = $useAccount->authAccount($data);
@@ -48,41 +49,18 @@
 
 				$useResponse->responseCode(200);
 				$useResponse->responseReturn($dataAccount);
-				
-				die;
 			}
 			else
 			{
 				$useResponse->responseCode(406);
-				$useResponse->responseReturn(
-				[
-					"responseCode" => 406,
-					"responseText" => "Autenticação Inválida."
-				]);
-				
-				die;
 			}
 		}
 		else
 		{
 			$useResponse->responseCode(400);
-			$useResponse->responseReturn(
-			[
-				"responseCode" => 400,
-				"responseText" => "Faltando Dados."
-			]);
-			
-			die;
 		}
 	}
 	else
 	{
 		$useResponse->responseCode(400);
-		$useResponse->responseReturn(
-		[
-			"responseCode" => 400,
-			"responseText" => "Problema Na Requisição."
-		]);
-		
-		die;
 	}

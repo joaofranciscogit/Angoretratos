@@ -19,7 +19,8 @@
 		]
 	]);
 
-	$useAuth->dataAuth(DATA);
+	$useSession->sessionData(DATA);
+	$useSession->sessionValidate();
 
 	require_once HTML.'Page/Page.php';
 	require_once HTML.'Header/Header.php';

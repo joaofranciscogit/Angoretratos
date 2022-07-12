@@ -6,6 +6,12 @@
 	define('ROUTE',       './Source/Route/');
     define('RESPONSE',    './Source/Response/');
 
+    define('JWT',
+    [
+        'KEY'       => 'M0001',
+        'ALGORITM'  => 'HS256'
+    ]);
+
 	define('DATABASE',
     [
         'DRIVER'    => 'mysql',

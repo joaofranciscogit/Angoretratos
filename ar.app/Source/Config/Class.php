@@ -1,9 +1,7 @@
 <?php
 
-    use Autoload\Class\Auth\Auth;
-    use Autoload\Class\Csrf\Csrf;
+    use Autoload\Class\Session\Session;
     use Curl\Curl;
 
-    $useAuth 	= new Auth();
-    $useCsrf    = new Csrf();
+    $useSession = new Session();
     $useCurl    = new Curl();

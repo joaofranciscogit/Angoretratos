@@ -4,7 +4,6 @@
 
 	use Autoload\Model\Account\Account;
 	use Firebase\JWT\JWT;
-	use Curl\Curl;
 
 	$useAccount = new Account($useMysql);
 	$useJWT 	= new JWT();
@@ -50,12 +49,12 @@
 					$data[":accountEmail"]
 				);
 
+				$payload 	= ['account_id' => $dataAccount[0]['account_id']];
+				$key		= JWT['key'];
+				$algoritm	= JWT['ALGORITM'];
+
 						$useResponse->responseCode(200);
-				echo 	$useResponse->responseReturn(
-				[
-					"responseToken" => $useJWT->encode($dataAccount, 'account_key', 'HS256'),
-					"responseData"	=> $dataAccount[0]
-				]);
+				echo 	$useResponse->responseReturn(["responseToken" => $useJWT->encode($payload, $key, $algoritm)]);
 			}
 			else
 			{

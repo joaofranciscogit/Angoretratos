@@ -12,8 +12,6 @@
 		'META'		=> null
 	]);
 
-	$useAuth->dataAuth(DATA);
-
 	$getAuthData = $_GET['authData'];
 	if(!empty($getAuthData))
 	{

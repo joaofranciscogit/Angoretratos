@@ -11,12 +11,10 @@
 		'META'		=> null
 	]);
 
-	$useAuth->dataAuth(DATA);
-  $useAuth->dataValidate();
+	$useSession->sessionData(DATA);
+	$useSession->sessionValidate();
 
   var_dump($_SESSION['ACCOUNT']);
-
-  echo $useAuth->dataValidate();
 
 	require_once HTML.'Page/Page.php';
 	#require_once HTML.'Header/Header.php';

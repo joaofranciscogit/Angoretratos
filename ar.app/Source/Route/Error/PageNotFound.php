@@ -4,19 +4,12 @@
 
 	define('DATA',
 	[
-
 		'ACCESS'	=> 'PUBLIC',
+		'MASTER'	=> false,
+		'SESSION'	=> null,
 		'MODULE'	=> null,
-		'AUTH'		=> false,
-		'META'		=> 
-		[
-			'INDEX'         => false,
-			'TITLE'			=> 'Angoretratos | 404 Página Não Encontrada',
-			'DESCRIPTION'	=> null,
-			'KEYWORDS'		=> null,
-			'IMAGE'			=> null,
-			'AUTHOR'		=> PROJECT['AUTHOR']
-		]
+		'TITLE'		=> 'Angoretratos | Página Não Encontrada',
+		'META'		=> null
 	]);
 
 	$useAuth->dataAuth(DATA);
@@ -25,7 +18,7 @@
 	require_once HTML.'Header/Header.php';
 
 ?>
-
+	<h1>Página Não Encontrada</h1>
 <?php
 
 	require_once HTML.'Footer/Footer.php';

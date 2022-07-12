@@ -16,7 +16,7 @@
 			$readAccount = $this->database->mysqlExe("
 
 				select *from 	account 
-				where 			account_id = :account_id
+				where 			account_id = :accountId
 
 			", $data);
 
@@ -49,12 +49,12 @@
 						account_access
 			)
 			values(
-						:account_code,
-						:account_name,
-						:account_email,
-						:account_pass,
-						:account_master,
-						:account_access
+						:accountCode,
+						:accountName,
+						:accountEmail,
+						:accountPass,
+						:accountMaster,
+						:accountAccess
 			)
 
 			", $data);
@@ -69,11 +69,11 @@
 			$updateAccount = $this->database->mysqlNon("
 
 				update 	account
-				set 	account_name 	= :account_name,
-						account_email	= :account_email,
-						account_master	= :account_master,
-						account_access	= :account_access
-				where 	account_id 		= :account_id;
+				set 	account_name 	= :accountName,
+						account_email	= :accountEmail,
+						account_master	= :accountMaster,
+						account_access	= :accountAccess
+				where 	account_id 		= :accountId;
 
 			", $data);
 
@@ -87,8 +87,8 @@
 			$updatepassAccount = $this->database->mysqlNon("
 
 				update 	account
-				set 	account_pass	= :account_pass
-				where 	account_id 		= :account_id;
+				set 	account_pass	= :accountPass
+				where 	account_id 		= :accountId;
 
 			", $data);
 
@@ -101,7 +101,7 @@
 			$deleteAccount = $this->database->mysqlNon("
 
 				delete from account
-				where 		account_id = :account_id;
+				where 		account_id = :accountId;
 
 			", $data);
 
@@ -113,8 +113,8 @@
 			$authAccount = $this->database->mysqlExe("
 
 				select *from 	account
-				where 			account_email = :account_email
-				and 			account_pass = :account_pass;
+				where 			account_email 	= :accountEmail
+				and 			account_pass 	= :accountPass;
 
 			", $data);
 

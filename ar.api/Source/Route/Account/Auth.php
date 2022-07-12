@@ -3,8 +3,11 @@
 	require_once "./Source/Config/Class.php";
 
 	use Autoload\Model\Account\Account;
+	use Firebase\JWT\JWT;
+	use Curl\Curl;
 
 	$useAccount = new Account($useMysql);
+	$useJWT 	= new JWT();
 
 	define("DATA",
 	[
@@ -26,14 +29,14 @@
 		$arr = json_decode(DATA["REQUEST"]["JSON"]);
 
 		if	(
-					!empty($arr->account_email)
-				&&	!empty($arr->account_pass)
+					!empty($arr->accountEmail)
+				&&	!empty($arr->accountPass)
 			)
 		{
 			$data  = 
 			[
-				":account_email" 	=> $arr->account_email,
-				":account_pass" 	=> $arr->account_pass
+				":accountEmail" => $arr->accountEmail,
+				":accountPass" 	=> $arr->accountPass
 			];
 
 			$authAccount = $useAccount->authAccount($data);
@@ -44,23 +47,30 @@
 					$useMysql,
 					"account",
 					"account_email",
-					$data[":account_email"]
+					$data[":accountEmail"]
 				);
 
-				$useResponse->responseCode(200);
-				$useResponse->responseReturn($dataAccount);
+						$useResponse->responseCode(200);
+				echo 	$useResponse->responseReturn(
+				[
+					"responseToken" => $useJWT->encode($dataAccount, 'account_key', 'HS256'),
+					"responseData"	=> $dataAccount[0]
+				]);
 			}
 			else
 			{
-				$useResponse->responseCode(406);
+						$useResponse->responseCode(406);
+				echo 	$useResponse->responseReturn(["responseText" => "Autenticação Inválida."]);
 			}
 		}
 		else
 		{
-			$useResponse->responseCode(400);
+					$useResponse->responseCode(400);
+			echo 	$useResponse->responseReturn(["responseText" => "Faltando Dados."]);
 		}
 	}
 	else
 	{
-		$useResponse->responseCode(400);
+				$useResponse->responseCode(400);
+		echo 	$useResponse->responseReturn(["responseText" => "Requisição Inválida."]);
 	}

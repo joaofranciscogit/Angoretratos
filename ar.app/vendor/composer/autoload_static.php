@@ -7,10 +7,6 @@ namespace Composer\Autoload;
 class ComposerStaticInit54e31a477b2d7b7d5fe4bc81c4b61511
 {
     public static $prefixLengthsPsr4 = array (
-        'N' => 
-        array (
-            'Nowakowskir\\JWT\\' => 16,
-        ),
         'C' => 
         array (
             'Curl\\' => 5,
@@ -22,10 +18,6 @@ class ComposerStaticInit54e31a477b2d7b7d5fe4bc81c4b61511
     );
 
     public static $prefixDirsPsr4 = array (
-        'Nowakowskir\\JWT\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/nowakowskir/php-jwt/src',
-        ),
         'Curl\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-curl-class/php-curl-class/src/Curl',

@@ -6,9 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Symfony\\Polyfill\\Php80\\' => array($vendorDir . '/symfony/polyfill-php80'),
-    'Nowakowskir\\JWT\\' => array($vendorDir . '/nowakowskir/php-jwt/src'),
-    'MongoDB\\' => array($vendorDir . '/mongodb/mongodb/src'),
-    'Jean85\\' => array($vendorDir . '/jean85/pretty-package-versions/src'),
+    'Firebase\\JWT\\' => array($vendorDir . '/firebase/php-jwt/src'),
+    'Curl\\' => array($vendorDir . '/php-curl-class/php-curl-class/src/Curl'),
     'Autoload\\' => array($baseDir . '/Source'),
 );

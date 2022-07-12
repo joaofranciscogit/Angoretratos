@@ -7,7 +7,7 @@
 		}
 	},
 	"require": {
-		"nowakowskir/php-jwt": "^2.0",
-		"mongodb/mongodb": "^1.12"
+		"php-curl-class/php-curl-class": "^9.6",
+		"firebase/php-jwt": "^6.2"
 	}
 }

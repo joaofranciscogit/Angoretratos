@@ -8,10 +8,10 @@
 		'ACCESS'	=> 'PUBLIC',
 		'MODULE'	=> null,
 		'AUTH'		=> false,
+		'TITLE'		=> 'Angoretratos | Página Inicial',
 		'META'		=> 
 		[
-			'INDEX'         => false,
-			'TITLE'			=> 'Angoretratos | Inicial',
+			'INDEX'         => true,
 			'DESCRIPTION'	=> null,
 			'KEYWORDS'		=> null,
 			'IMAGE'			=> null,

@@ -3,11 +3,19 @@
   
 <head>
     <meta charset="utf-8">
-    <title><?php echo DATA['META']['TITLE']; ?></title>
+    <title><?php echo DATA['TITLE']; ?></title>
 
-    <meta name="description" content="<?php echo DATA['META']['DESCRIPTION']; ?>">
-    <meta name="keywords" content="<?php echo DATA['META']['KEYWORDS']; ?>">
-    <meta name="author" content="<?php echo DATA['META']['AUTHOR']; ?>">
+    <?php if(DATA['META'] != null) 
+          { ?>
+            <meta name="description" content="<?php echo DATA['META']['DESCRIPTION']; ?>">
+            <meta name="keywords" content="<?php echo DATA['META']['KEYWORDS']; ?>">
+            <meta name="author" content="<?php echo DATA['META']['AUTHOR']; ?>">
+    <?php } ?>
+
+    <?php if(DATA['META'] == null) 
+          { ?>
+            <!--noindex-->
+    <?php }; ?>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,6 +26,10 @@
 
     <script src="<?php echo ASSET; ?>vendor/sweetalert/dist/sweetalert.js"></script>
     <link rel="stylesheet" href="<?php echo ASSET; ?>vendor/sweetalert/dist/sweetalert.css">
+
+    <script src="<?php echo ASSET; ?>vendor/chartjs/dist/chart.js"></script>
+
+    <script src="<?php echo ASSET; ?>vendor/jquery/jquery.min.js"></script>
 
     <link rel="stylesheet" media="screen" href="<?php echo  ASSET; ?>css/theme.min.css">
 

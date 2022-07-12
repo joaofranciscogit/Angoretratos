@@ -6,27 +6,14 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit54e31a477b2d7b7d5fe4bc81c4b61511
 {
-    public static $files = array (
-        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
-        '3a37ebac017bc098e9a86b35401e7a68' => __DIR__ . '/..' . '/mongodb/mongodb/src/functions.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
-        'S' => 
+        'F' => 
         array (
-            'Symfony\\Polyfill\\Php80\\' => 23,
+            'Firebase\\JWT\\' => 13,
         ),
-        'N' => 
+        'C' => 
         array (
-            'Nowakowskir\\JWT\\' => 16,
-        ),
-        'M' => 
-        array (
-            'MongoDB\\' => 8,
-        ),
-        'J' => 
-        array (
-            'Jean85\\' => 7,
+            'Curl\\' => 5,
         ),
         'A' => 
         array (
@@ -35,21 +22,13 @@ class ComposerStaticInit54e31a477b2d7b7d5fe4bc81c4b61511
     );
 
     public static $prefixDirsPsr4 = array (
-        'Symfony\\Polyfill\\Php80\\' => 
+        'Firebase\\JWT\\' => 
         array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
         ),
-        'Nowakowskir\\JWT\\' => 
+        'Curl\\' => 
         array (
-            0 => __DIR__ . '/..' . '/nowakowskir/php-jwt/src',
-        ),
-        'MongoDB\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/mongodb/mongodb/src',
-        ),
-        'Jean85\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/jean85/pretty-package-versions/src',
+            0 => __DIR__ . '/..' . '/php-curl-class/php-curl-class/src/Curl',
         ),
         'Autoload\\' => 
         array (
@@ -58,12 +37,7 @@ class ComposerStaticInit54e31a477b2d7b7d5fe4bc81c4b61511
     );
 
     public static $classMap = array (
-        'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
-        'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
-        'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
-        'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

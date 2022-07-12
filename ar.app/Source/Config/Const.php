@@ -15,7 +15,6 @@
 
     define('HTML',        './Source/Html/');
     define('ASSET',       BASE.'Source/Asset/');
-    define('HREF',        BASE.'Source/Route/');
 
     define('ROUTE',       './Source/Route/');
     define('ERROR',       './Error/PageNotFound.php');

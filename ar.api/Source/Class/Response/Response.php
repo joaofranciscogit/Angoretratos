@@ -11,6 +11,6 @@
 
         public function responseReturn($return)
         {
-            return printf(json_encode($return));
+            return json_encode($return);
         }
     }

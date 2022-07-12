@@ -5,6 +5,7 @@
     use Autoload\Class\Mysql\Mysql;
     use Autoload\Class\Code\Code;
     use Autoload\Class\Helper\Helper;
+    use Firebase\JWT\JWT;
 
     $useValidate 	= new Validate();
     $useResponse    = new Response();

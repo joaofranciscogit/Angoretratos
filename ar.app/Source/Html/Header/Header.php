@@ -11,16 +11,13 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="d-none d-lg-block nav-item">
-                  <a href="#" class="nav-link"> | </a>
-                </li>
-                <li class="d-none d-lg-block nav-item">
                   <a href="#" class="nav-link">O Retrato Fiél da Notícia em Angola</a>
                 </li>
                 <li class="nav-item">
-                  <a href="docs/getting-started.html" class="nav-link"><i class="d-none d-lg-block bx bx-search mx-3"></i> Pesquisa</a>
+                  <a href="<?php echo BASE; ?>main/pesquisa" class="nav-link"><i class="d-none d-lg-block bx bx-search mx-3"></i> Pesquisa</a>
                 </li>
                 <li class="nav-item">
-                  <a href="docs/getting-started.html" class="nav-link">Contacto</a>
+                  <a href="<?php echo BASE; ?>main/contacto" class="nav-link">Contacto</a>
                 </li>
               </ul>
             </div>     

@@ -7,7 +7,6 @@
 		}
 	},
 	"require": {
-		"php-curl-class/php-curl-class": "^9.6",
-		"nowakowskir/php-jwt": "^2.0"
+		"php-curl-class/php-curl-class": "^9.6"
 	}
 }
